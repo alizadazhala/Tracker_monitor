@@ -1,1 +1,47 @@
+BBG EXTRACT
+Transition Mispricing Monitor · European Energy & Utilities
+26 firms · benchmark: SXEP Index (STOXX Europe 600 Oil & Gas)
+overlays: Brent crude (CO1) · Dutch TTF gas (TZT1) · rolling β, 120d window · 20d CAR
+CREATED BY ZHALA ALIZADA
+
+Overview
+Live Tracker
+Technical Analysis
+Formulas, Applied Live
+Fundamentals (WRDS)
+Green Bond Events
+News & Sources
+Sample & Selection Rationale
+
+SIGNAL DESK · EUROPEAN ENERGY TRANSITION
+The repricing gap: identifying unusual returns around transition-related information.
+An abnormal-return screen for European energy and utility firms, designed to identify when realised equity performance diverges from market-model expected performance around transition-related information.
+COVERAGE UNIVERSE
+26
+SAMPLE WINDOW
+2019–2026
+OBSERVATIONS
+~1,965d
+MARKET MODEL
+SXEP
+REFRESH BASIS
+Daily
+🌍
+12
+jurisdictions ⚡ Full value chain — majors through pure-play renewables 📊 β / AR / CAR estimated client-side, not pre-baked 🛢️ Commodity overlays scoped to exposure, not blanket-applied
+Data quality — not uniform across the sample, and that's shown, not hidden
+20 of the 26 firms run on dividend/split-adjusted returns with real daily high/low ranges, extended through 27 August 2026. Another 3 — OMV, Tenaris, Vår Energi — now run on properly dividend-adjusted returns too (via each firm's Total Return Index), though still without a real intraday range and with data only through 6 July 2026. Only TotalEnergies, Equinor, and Ørsted remain on the older, unadjusted close-to-close methodology, because updated source data for them hasn't been supplied yet. Every firm below is tagged with which basis its numbers rest on.
+New: real green bond events, not simulated ones
+The Green Bond Events tab holds 147 verified green bond issuances across 12 firms, pulled from two Bloomberg bond-screener exports (one dated 2019–2026 with issue dates and ISINs, cross-checked against an earlier active-bonds pull) and manually checked against false matches. Of those, 89 events across 11 issuers satisfy the dissertation's event-study data requirements (sufficient pre-event estimation history and event-window coverage) and form the validated sample: Enel's only verified bond predates the price series entirely, and one further Engie event (21/06/2019) cannot support the full 120-day pre-event window and is excluded on the same rule applied to every other candidate — not case-by-case. This is the first actual empirical test in this tracker, not a live-data illustration of the mechanic, and its headline result is consistent with the dissertation's own independent Python reconstruction of the same N=89 sample.
+Coverage Universe — Ranked by |z|
+Full 26-name screen, sorted by signal magnitude · click any row for the full firm view in Live Tracker
+FIRM
+SEGMENT
+30D
+MISPRICING Z
+CURRENT READ
+DATA BASIS
+LIVE QUOTE
+
+Source: Bloomberg Terminal export — 23 core European energy & utility firms (PX_LAST, PX_VOLUME, CUR_MKT_CAP, TOT_RETURN_INDEX_GROSS_DVDS, PE_RATIO) plus TotalEnergies, Equinor and Ørsted (price only) and Brent crude (CO1) as a macro overlay, benchmarked against the SXEP Index (STOXX Europe 600 Oil & Gas). 02/01/2019–01/07/2026. Built for dissertation data exploration — not investment advice.
 
